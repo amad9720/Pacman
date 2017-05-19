@@ -1,0 +1,21 @@
+
+    public void dessinerJoueur(Jeu jeu){
+        switch (direction){
+            case 'W':
+                StdDraw.picture(jeu.joueur.getX()+0.5, jeu.joueur.getY()+0.5, jeu.imagePerso, 1, 1,-180);
+
+                break;
+            case 'N':
+                StdDraw.picture(jeu.joueur.getX()+0.5, jeu.joueur.getY()+0.5, jeu.imagePerso, 1, 1,-90);
+                break;
+            case 'S':
+                StdDraw.picture(jeu.joueur.getX()+0.5, jeu.joueur.getY()+0.5, jeu.imagePerso, 1, 1,+90);
+                break;
+            case 'E':
+                StdDraw.picture(jeu.joueur.getX()+0.5, jeu.joueur.getY()+0.5, jeu.imagePerso, 1, 1,0);
+                break;
+
+
+        }
+       // dessinerScore(jeu);
+    }
